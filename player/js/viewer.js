@@ -3,7 +3,7 @@
 
   let params     = new URLSearchParams(document.location.search.substring(1));
   let accountId  = params.get('account');
-  let streamName = params.get('id');
+  let streamName = params.get('streamId');
   let subToken = params.get('token');// SubscribingToken - placed here for ease of testing, should come from secure location. (php/nodejs)
 
   console.log('Millicast Viewer Stream: ', streamName);
